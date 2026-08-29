@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nikhil Guleria — Senior Mobile App Developer & Technical Lead</title>
+<meta name="description" content="Nikhil Guleria is a Senior Mobile App Developer and Technical Lead specializing in Flutter, Android, Firebase and scalable mobile product engineering.">
+<meta name="author" content="Nikhil Guleria">
+<meta property="og:title" content="Nikhil Guleria — Senior Mobile App Developer & Technical Lead">
+<meta property="og:description" content="Production-grade mobile products, from architecture to deployment.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0d12">
+<style>
+:root{
+  --bg:#080a0f; --panel:#0e1118; --panel2:#121722; --text:#f5f7fb;
+  --muted:#9ca5b5; --line:rgba(255,255,255,.09); --accent:#a8ff6b;
+  --accent2:#7c9cff; --max:1180px; --radius:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(8,10,15,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:-.04em;font-size:19px}
+.brand span{color:var(--accent)}
+.nav-links{display:flex;gap:26px;color:var(--muted);font-size:14px}
+.nav-links a:hover{color:#fff}
+.hero{padding:96px 0 80px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(168,255,107,.13),transparent 68%);top:-220px;right:-160px;pointer-events:none}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:rgba(255,255,255,.03);padding:7px 12px;border-radius:999px;color:#cdd4df;font-size:13px}
+.dot{width:7px;height:7px;background:var(--accent);border-radius:50%;box-shadow:0 0 14px var(--accent)}
+h1{font-size:clamp(42px,5.5vw,72px);line-height:.98;letter-spacing:-.065em;max-width:950px;margin:25px 0}
+h1 .dim{color:#687184}
+.hero-copy{max-width:720px;color:var(--muted);font-size:20px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{padding:13px 18px;border-radius:12px;border:1px solid var(--line);font-weight:700;font-size:14px}
+.btn.primary{background:var(--accent);color:#071006;border-color:var(--accent)}
+.btn.secondary{background:rgba(255,255,255,.04)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:70px}
+.stat{border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015));padding:22px;border-radius:18px}
+.stat strong{display:block;font-size:30px;letter-spacing:-.04em}.stat span{color:var(--muted);font-size:13px}
+section{padding:96px 0}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:36px}
+.kicker{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+h2{font-size:clamp(34px,5vw,58px);line-height:1;letter-spacing:-.055em;margin:8px 0 0}
+.section-intro{max-width:540px;color:var(--muted)}
+.work-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:16px}
+.project{border:1px solid var(--line);background:var(--panel);border-radius:var(--radius);overflow:hidden;min-height:430px;position:relative}
+.project .visual{height:250px;padding:22px;background:linear-gradient(135deg,#151a27,#0b0e14);display:flex;align-items:center;justify-content:center;overflow:hidden}.project .visual img{max-width:100%;max-height:100%;object-fit:contain;border-radius:18px}
+.project.large .visual{height:340px}
+.placeholder{width:78%;height:82%;border:1px dashed rgba(255,255,255,.25);border-radius:18px;display:flex;align-items:center;justify-content:center;text-align:center;color:#7f899a;font-size:13px;padding:30px;background:linear-gradient(145deg,rgba(124,156,255,.08),rgba(168,255,107,.04))}
+.phone-placeholder{width:160px;height:270px;border-radius:28px;border:6px solid #202633;background:linear-gradient(145deg,#26314a,#10131a);box-shadow:0 25px 70px rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;color:#8c96a8;font-size:12px;text-align:center;padding:20px}
+.project-body{padding:24px}
+.project h3{font-size:26px;margin:0 0 6px;letter-spacing:-.035em}
+.project p{color:var(--muted);margin:8px 0 16px}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:5px 9px;color:#c4cbd6}
+.links{display:flex;gap:14px;margin-top:20px;font-size:13px;color:#dce2ec}
+.links a{text-decoration:underline;text-underline-offset:4px}
+.case{margin-top:16px;border:1px solid var(--line);background:var(--panel);border-radius:var(--radius);overflow:hidden}
+.case-top{padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.case h3{font-size:38px;line-height:1.05;margin:8px 0 14px;letter-spacing:-.05em}
+.case p{color:var(--muted)}
+.case-meta{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:24px}
+.meta{padding:15px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025)}
+.meta small{display:block;color:#7e8899;text-transform:uppercase;font-size:10px;letter-spacing:.12em}.meta b{font-size:14px}
+.case-study-image{padding:0 18px 18px}
+.case-study-image img{width:100%;display:block;border-radius:20px;border:1px solid var(--line);box-shadow:0 25px 70px rgba(0,0,0,.35)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.service{padding:24px;border:1px solid var(--line);background:var(--panel);border-radius:20px}
+.service-num{color:var(--accent);font-weight:800;font-size:12px}.service h3{margin:18px 0 8px;font-size:20px}.service p{color:var(--muted);font-size:14px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.skill-group{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:24px}.skill-group h3{margin:0 0 15px}.skill-group p{color:var(--muted);font-size:14px;margin:0;line-height:1.9}
+.timeline{border-left:1px solid var(--line);margin-left:8px;padding-left:30px}
+.role{position:relative;padding:0 0 40px}.role:before{content:"";position:absolute;left:-36px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.role h3{margin:0;font-size:22px}.role .period{color:var(--accent);font-size:12px;font-weight:800}.role .company{color:#d7dce5}.role p{color:var(--muted);max-width:720px}
+.opensource{display:grid;grid-template-columns:1fr .8fr;gap:16px}
+.open-card{border:1px solid var(--line);border-radius:24px;background:var(--panel);padding:30px}.open-card h3{font-size:27px;margin:0 0 10px}.open-card p{color:var(--muted)}
+.quote{font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-.05em;margin:0}
+.contact{background:linear-gradient(135deg,rgba(168,255,107,.12),rgba(124,156,255,.09));border:1px solid var(--line);border-radius:30px;padding:50px}
+.contact h2{max-width:800px}.contact p{color:#aeb7c7;max-width:600px}
+footer{padding:30px 0 50px;color:#70798a;font-size:13px;border-top:1px solid var(--line);margin-top:96px}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){
+ .nav-links{display:none}.hero{padding-top:80px}.stats{grid-template-columns:1fr 1fr}
+ .work-grid,.case-top,.opensource{grid-template-columns:1fr}.services,.skills{grid-template-columns:1fr}
+ .gallery{grid-template-columns:1fr 1fr}.section-head{display:block}.section-intro{margin-top:15px}
+}
+@media(max-width:540px){
+ .container{width:min(calc(100% - 28px),var(--max))}
+ h1{font-size:52px}.hero-copy{font-size:17px}.stats{grid-template-columns:1fr 1fr}
+ section{padding:70px 0}.gallery{grid-template-columns:1fr}.contact{padding:30px}
+}
+
+/* Responsive project images + click-to-expand gallery */
+.project .visual{height:250px;padding:22px;background:linear-gradient(135deg,#151a27,#0b0e14);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.project .visual img{max-width:100%;max-height:100%;object-fit:contain;border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.55);transition:transform .35s ease,filter .35s ease}
+.project .visual:hover img{transform:scale(1.025)}
+.image-button{appearance:none;border:0;padding:0;background:transparent;width:100%;height:100%;display:flex;align-items:center;justify-content:center;cursor:zoom-in}
+.image-button:focus-visible{outline:2px solid var(--accent);outline-offset:-4px;border-radius:16px}
+.case-study-image{padding:0 18px 18px}
+.case-study-frame{position:relative;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#090b10;box-shadow:0 24px 70px rgba(0,0,0,.38)}
+.case-study-frame:after{content:"Click to view";position:absolute;right:16px;bottom:16px;background:rgba(8,10,15,.82);border:1px solid rgba(255,255,255,.14);padding:7px 11px;border-radius:999px;font-size:11px;color:#dce2ec;pointer-events:none}
+.case-study-image .image-button{height:auto;min-height:280px}
+.case-study-image img{width:100%;height:auto;display:block;max-height:560px;object-fit:contain}
+.case-note{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:12px 4px 0;color:#7f899a;font-size:12px}
+
+/* Full-screen mobile/desktop image viewer */
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(3,5,9,.94);backdrop-filter:blur(14px);display:none;align-items:center;justify-content:center;padding:24px}
+.lightbox.open{display:flex}
+.lightbox-inner{width:min(96vw,1400px);height:min(92vh,900px);display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border-radius:14px;box-shadow:0 30px 100px rgba(0,0,0,.7)}
+.lightbox-close{position:fixed;right:22px;top:18px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.08);color:#fff;font-size:25px;cursor:pointer;z-index:102}
+.lightbox-caption{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:rgba(8,10,15,.85);border:1px solid rgba(255,255,255,.12);padding:7px 12px;border-radius:999px;color:#cdd4df;font-size:12px;white-space:nowrap}
+@media(max-width:850px){
+  .project.large .visual{height:300px}
+  .case-study-image{padding:0 12px 12px}
+  .case-study-image img{max-height:460px}
+}
+@media(max-width:540px){
+  h1{font-size:44px;max-width:600px}
+  .hero-copy{font-size:16px}
+  .project.large .visual{height:260px;padding:14px}
+  .case-study-image{padding:0 10px 10px}
+  .case-study-image .image-button{min-height:0}
+  .case-study-image img{max-height:none;width:100%}
+  .case-study-frame:after{content:"Tap to view";right:10px;bottom:10px;font-size:10px;padding:6px 9px}
+  .case-note{font-size:11px}
+  .lightbox{padding:10px}
+  .lightbox-inner{width:100%;height:90vh}
+  .lightbox img{max-width:100%;max-height:86vh;border-radius:10px}
+  .lightbox-close{right:12px;top:10px}
+  .lightbox-caption{bottom:10px;font-size:10px;max-width:80%;overflow:hidden;text-overflow:ellipsis}
+}
+
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#">Nikhil<span>.</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work">Work</a><a href="#services">Services</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow"><span class="dot"></span> Available for selected mobile product work</div>
+    <h1>Mobile products, built <span class="dim">end-to-end.</span></h1>
+    <p class="hero-copy">Senior Mobile App Developer &amp; Technical Lead specializing in Flutter, Android, Firebase and scalable mobile architecture — from product thinking and architecture to implementation, delivery and long-term evolution.</p>
+    <div class="actions">
+      <a class="btn primary" href="#work">View selected work</a>
+      <a class="btn secondary" href="mailto:nikhilguleria317@gmail.com">Let's build your app</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>9+</strong><span>Years in mobile development</span></div>
+      <div class="stat"><strong>12+</strong><span>End-to-end mobile solutions</span></div>
+      <div class="stat"><strong>6</strong><span>Mobile developers led</span></div>
+      <div class="stat"><strong>2015</strong><span>Professional mobile career began</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">Selected work</div><h2>Products I've helped bring to life.</h2></div>
+    <p class="section-intro">A mix of consumer apps, business platforms, real-time products and native Android systems. Each project highlights a different part of my engineering range.</p>
+  </div>
+
+  <div class="work-grid">
+    <article class="project large">
+      <div class="visual"><img src="images/orderwale-1.png" alt="OrderWale customer app home screen" style="height:100%;width:auto;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.55)"></div>
+      <div class="project-body">
+        <h3>OrderWale</h3>
+        <p><b>Product Manager · Mobile &amp; Product Engineering.</b> Built the customer apps and the wider restaurant-side ecosystem, including restaurant app, admin panel and web-based restaurant operations for online orders and dine-in management.</p>
+        <div class="tags"><span class="tag">Flutter</span><span class="tag">Android</span><span class="tag">iOS</span><span class="tag">Product Management</span><span class="tag">Restaurant Operations</span></div>
+        <div class="links"><a href="https://play.google.com/store/apps/details?id=com.orderwale.customer" target="_blank" rel="noopener">Google Play ↗</a><a href="https://apps.apple.com/us/app/orderwale/id6759821181" target="_blank" rel="noopener">App Store ↗</a></div>
+      </div>
+    </article>
+
+    <article class="project large">
+      <div class="visual"><img src="images/shopkeeper-1.png" alt="Shopkeeper customer app home screen" style="height:100%;width:auto;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.55)"></div>
+      <div class="project-body">
+        <h3>Shopkeeper</h3>
+        <p>Real-time Amazon FBA profitability, sales and inventory visibility for sellers.</p>
+        <div class="tags"><span class="tag">Flutter</span><span class="tag">Core Developer</span><span class="tag">Analytics</span><span class="tag">FBA</span></div>
+        <div class="links"><a href="https://play.google.com/store/apps/details?id=com.shopkeeper.prod" target="_blank" rel="noopener">Google Play ↗</a><a href="https://apps.apple.com/us/app/shopkeeper-for-amazon-sellers/id1558210817" target="_blank" rel="noopener">App Store ↗</a></div>
+      </div>
+    </article>
+
+    <article class="project large">
+      <div class="visual"><img src="images/farmersonly-1.png" alt="FarmersOnly customer app home screen" style="height:100%;width:auto;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.55)"></div>
+      <div class="project-body">
+        <h3>FarmersOnly</h3>
+        <p>A privacy-focused country dating product with search, matching and messaging experiences.</p>
+        <div class="tags"><span class="tag">Flutter</span><span class="tag">Android</span><span class="tag">iOS</span><span class="tag">Core Developer</span></div>
+        <div class="links"><a href="https://play.google.com/store/apps/details?id=com.farmersonly.android&hl=en_IN" target="_blank" rel="noopener">Google Play ↗</a><a href="https://apps.apple.com/us/app/farmers-only-country-dating/id6448507990" target="_blank" rel="noopener">App Store ↗</a></div>
+      </div>
+    </article>
+
+    <article class="project large">
+      <div class="visual"><img src="images/plutus-1.png" alt="FarmersOnly customer app home screen" style="height:100%;width:auto;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.55)"></div>
+      <div class="project-body">
+        <h3>Plutus</h3>
+        <p>Originally documented as UniCoHub; the current public listing presents Plutus as an AI game maker and arcade platform.</p>
+        <div class="tags"><span class="tag">Flutter</span><span class="tag">Developer &amp; Lead</span><span class="tag">Real-time</span></div>
+        <div class="links"><a href="https://play.google.com/store/apps/details?id=com.karata.unicohub&hl=en_IN" target="_blank" rel="noopener">Google Play ↗</a></div>
+      </div>
+    </article>
+
+    <article class="project large">
+      <div class="visual"><img src="images/vycab-1.png" alt="VYCAB customer app home screen" style="height:100%;width:auto;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.55)"></div>
+      <div class="project-body">
+        <h3>VYCAB</h3>
+        <p>Native Android ride-sharing experience covering passenger and driver workflows, including booking and real-time tracking.</p>
+        <div class="tags"><span class="tag">Kotlin</span><span class="tag">Android Native</span><span class="tag">Passenger</span><span class="tag">Driver</span></div>
+        <div class="links"><a href="https://play.google.com/store/apps/details?id=com.vycab.passenger&hl=en_IN" target="_blank" rel="noopener">Passenger ↗</a><a href="https://play.google.com/store/apps/details?id=com.vycab.driver&hl=en_IN" target="_blank" rel="noopener">Driver ↗</a></div>
+      </div>
+    </article>
+  </div>
+
+  <div class="case">
+    <div class="case-top">
+      <div>
+        <div class="kicker">Case study · OrderWale</div>
+        <h3>More than a customer app.</h3>
+        <p>I worked on OrderWale as a product-focused engineer, building the customer-facing mobile experience while contributing to the broader product ecosystem: restaurant operations, online ordering, admin workflows and dine-in management.</p>
+        <div class="case-meta">
+          <div class="meta"><small>Role</small><b>Product Manager · Product Engineering</b></div>
+          <div class="meta"><small>Platforms</small><b>Flutter · Android · iOS · Web</b></div>
+          <div class="meta"><small>Product</small><b>Food delivery + restaurant platform</b></div>
+          <div class="meta"><small>Operations</small><b>Online orders + dine-in management</b></div>
+        </div>
+      </div>
+      <div>
+        <p class="quote">One product, multiple surfaces — customer, restaurant and operations.</p>
+      </div>
+    </div>
+    <div class="case-study-image">
+      <img src="images/orderwale-case-study.png" alt="OrderWale case study showing customer app, restaurant menu and restaurant operations dashboard">
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">Capabilities</div><h2>What I can own.</h2></div>
+    <p class="section-intro">I work best where mobile development needs more than UI implementation — architecture, integrations, product decisions and dependable delivery.</p>
+  </div>
+  <div class="services">
+    <article class="service"><span class="service-num">01</span><h3>Flutter product development</h3><p>Cross-platform Android and iOS applications with scalable architecture, state management and production-ready integrations.</p></article>
+    <article class="service"><span class="service-num">02</span><h3>Native Android engineering</h3><p>Java/Kotlin applications and native integrations, backed by years of Android-first development experience.</p></article>
+    <article class="service"><span class="service-num">03</span><h3>Architecture &amp; modernization</h3><p>Designing maintainable mobile foundations using patterns such as MVVM, BLoC, Riverpod and Clean Architecture.</p></article>
+    <article class="service"><span class="service-num">04</span><h3>Backend &amp; API integration</h3><p>Firebase, REST APIs, networking, real-time communication, authentication, notifications and third-party services.</p></article>
+    <article class="service"><span class="service-num">05</span><h3>Product &amp; technical leadership</h3><p>Technical direction, delivery planning, stakeholder communication, mentoring and coordination across mobile teams.</p></article>
+    <article class="service"><span class="service-num">06</span><h3>Production delivery</h3><p>From architecture and implementation through CI/CD, store deployment, maintenance and iterative product improvement.</p></article>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">Engineering stack</div><h2>Tools that support the work.</h2></div>
+  </div>
+  <div class="skills">
+    <div class="skill-group"><h3>Mobile</h3><p>Flutter · Dart · Android · Java · Kotlin · iOS fundamentals · Flutter Web · Flutter Desktop</p></div>
+    <div class="skill-group"><h3>Architecture &amp; state</h3><p>Clean Architecture · MVVM · MVP · BLoC · Riverpod · Provider · GetX · ViewModel · LiveData</p></div>
+    <div class="skill-group"><h3>Data &amp; networking</h3><p>Firebase · SQLite · Room · Realm · Hive · SQFlite · Retrofit · OkHttp · Dio · WebSockets · Socket.IO</p></div>
+    <div class="skill-group"><h3>Integrations</h3><p>Google Maps · BLE · FCM · Push Notifications · Stripe · In-App Purchases · Social Login</p></div>
+    <div class="skill-group"><h3>Delivery</h3><p>Git · GitHub · Bitbucket · Jenkins · GitLab CI/CD · Jira · Trello · Slack</p></div>
+    <div class="skill-group"><h3>Leadership</h3><p>Technical mentoring · Architecture decisions · Product roadmaps · Client communication · Resource allocation</p></div>
+  </div>
+</div>
+</section>
+
+<section id="experience">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">Career</div><h2>Android → Flutter → technical leadership.</h2></div>
+    <p class="section-intro">A career built around increasing ownership — from native mobile implementation to architecture, teams, products and independent client delivery.</p>
+  </div>
+  <div class="timeline">
+    <article class="role"><div class="period">2021 — PRESENT</div><h3>Freelance Mobile App Developer</h3><div class="company">Independent · Hamirpur, Himachal Pradesh</div><p>Delivered end-to-end Android and Flutter solutions for clients and startups, collaborating with remote teams and taking ownership across product delivery.</p></article>
+    <article class="role"><div class="period">2017 — 2021</div><h3>Sr. Software Developer → Team Lead, Mobile</h3><div class="company">Softuvo Solutions Pvt. Ltd.</div><p>Established the Flutter development function, progressed into mobile technical leadership, led a team of up to six developers, contributed to architecture and CI/CD, worked with stakeholders and design teams, and oversaw production delivery.</p></article>
+    <article class="role"><div class="period">2015 — 2017</div><h3>Android Developer</h3><div class="company">Populace Inc.</div><p>Built Android applications including conference, tourism and live-streaming products, with REST APIs, social login, Firebase and location features.</p></article>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="opensource">
+    <div class="open-card">
+      <div class="kicker">Open source</div>
+      <h3>Daily Notes Expense Tracker</h3>
+      <p>A public GitHub project demonstrating continued hands-on development outside client work.</p>
+      <div class="links"><a href="https://github.com/nikhil-guleria/daily_notes_expance_tracker" target="_blank" rel="noopener">View repository ↗</a><a href="https://github.com/nikhil-guleria" target="_blank" rel="noopener">GitHub profile ↗</a></div>
+    </div>
+    <div class="open-card">
+      <p class="quote">I build systems I can explain, maintain and hand over — not just screens that compile.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+  <div class="contact">
+    <div class="kicker">Start a conversation</div>
+    <h2>Have a mobile product in mind?</h2>
+    <p>If you need someone who can contribute beyond implementation — architecture, product thinking, integrations and delivery — let's talk about what you're building.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:nikhilguleria317@gmail.com">Email Nikhil</a>
+      <a class="btn secondary" href="https://www.linkedin.com/in/nikhil-guleria-300a6393/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn secondary" href="https://github.com/nikhil-guleria" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project image viewer">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">×</button>
+  <div class="lightbox-inner">
+    <img id="lightboxImage" src="" alt="">
+  </div>
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<footer>
+  <div class="container footer-row">
+    <span>© 2026 Nikhil Guleria</span>
+    <span>Senior Mobile App Developer &amp; Technical Lead</span>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const lightbox = document.getElementById('lightbox');
+  const image = document.getElementById('lightboxImage');
+  const caption = document.getElementById('lightboxCaption');
+  const close = document.getElementById('lightboxClose');
+  const buttons = document.querySelectorAll('[data-gallery-src]');
+
+  function openGallery(button){
+    image.src = button.dataset.gallerySrc;
+    image.alt = button.dataset.galleryAlt || 'Project image';
+    caption.textContent = button.dataset.galleryAlt || 'Project image';
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    close.focus();
+  }
+
+  function closeGallery(){
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    image.src = '';
+  }
+
+  buttons.forEach(button => button.addEventListener('click', () => openGallery(button)));
+  close.addEventListener('click', closeGallery);
+
+  lightbox.addEventListener('click', (event) => {
+    if(event.target === lightbox) closeGallery();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if(event.key === 'Escape' && lightbox.classList.contains('open')) closeGallery();
+  });
+})();
+</script>
+
+</body>
+</html>
